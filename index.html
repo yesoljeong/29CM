@@ -9,6 +9,10 @@
         rel="stylesheet">
     <title>Document</title>
     <style>
+        body {
+            height: 1500px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -16,7 +20,7 @@
             text-decoration: none;
         }
 
-        header .top_event {
+        .top_event {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -27,11 +31,11 @@
             height: 50px;
         }
 
-        header .top_event span {
+        .top_event span {
             color: tomato;
         }
 
-        header .top_event button {
+        .top_event button {
             background-color: tomato;
             /* background-image: url('sp_29cm.png');
             background-repeat: no-repeat;
@@ -53,13 +57,24 @@
             padding: 0 40px;
         }
 
+        header .top_section.fix{
+            background:green;
+            
+        }
+
         header .top_section .logo {
-            background-image: url('sp_29cm.png');
+            background-image: url('images/sp_29cm.png');
             background-repeat: no-repeat;
             background-position: 0 -90px;
             background-size: 200px 200px;
             width: 120px;
             height: 30px;
+        }
+
+        header .top_section .logo.fix{
+            background-position: 0 -25px;
+            width: 55px;
+            height: 55px;
         }
 
         header .top_section .top_menu {
@@ -71,13 +86,13 @@
         }
 
         header .top_section .top_menu a {
-            display:inline-block;
+            display: inline-block;
             color: #000;
         }
 
         header .top_section .top_menu a span {
             display: inline-block;
-            background-image: url('sp_29cm.png');
+            background-image: url('images/sp_29cm.png');
             background-repeat: no-repeat;
             background-size: 200px 200px;
             width: 18px;
@@ -111,9 +126,18 @@
 
         header .special_section .special_menu {
             display: flex;
-            width:1100px;
+            width: 1100px;
             justify-content: space-between;
             font-size: 3rem;
+            align-items: center;
+            /* background-color:tomato; */
+        }
+
+        header .special_section .special_menu.fix {
+            display: flex;
+            width: 1100px;
+            justify-content: space-between;
+            /* font-size: 2rem; */
             align-items: center;
             /* background-color:tomato; */
         }
@@ -125,15 +149,15 @@
             font-family: 'Ubuntu', sans-serif;
         }
 
-        header .special_section .special_menu .dot{
-            display:inline-block;
-            width:8px; 
-            height:8px;
-            background-color:tomato;
+        header .special_section .special_menu .dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: tomato;
             border-radius: 50%;
             vertical-align: top;
-            position:absolute;
-            top:140px;
+            position: absolute;
+            top: 140px;
         }
 
         header .special_section .special_menu li a:hover {
@@ -141,13 +165,13 @@
         }
 
         header .special_section input {
-            background-image: url('sp_29cm.png');
+            background-image: url('images/sp_29cm.png');
             background-repeat: no-repeat;
             background-size: 400px 400px;
             background-position: -250px 0;
             width: 45px;
             height: 45px;
-            border:0;
+            border: 0;
         }
 
         header .gnb {
@@ -194,20 +218,19 @@
         header .gnb .gnb_etc li a:hover {
             border-bottom: 5px solid #000;
         }
-
     </style>
 </head>
 
 <body>
     <div class="wrap">
-        <header>
-            <div class="top_event">
-                <p>29TV 첫 쇼핑을 지원하는 앱 <span>15%</span> 할인 쿠폰</p>
-                <button>쿠폰받기</button>
-            </div>
-            <div class="top_section">
+        <div class="top_event">
+            <p>29TV 첫 쇼핑을 지원하는 앱 <span>15%</span> 할인 쿠폰</p>
+            <button>쿠폰받기</button>
+        </div>
+        <header class="fix">
+            <div class="top_section fix">
                 <h1>
-                    <div class="logo"></div>
+                    <div class="logo fix"></div>
                 </h1>
                 <ul class="top_menu">
                     <li><a href="#"><span class="icon1"></span>MY PAGE</a></li>
@@ -217,12 +240,12 @@
                 </ul>
             </div>
             <div class="special_section">
-                <ul class="special_menu">
+                <ul class="special_menu fix">
                     <li><a href="#">Special-Order</a></li>
                     <li><a href="#">Showcase</a></li>
                     <li><a href="#">29TV
-                        <span class="dot"></span>
-                    </a></li>
+                            <span class="dot"></span>
+                        </a></li>
                     <li><a href="#">PT</a></li>
                     <li><a href="#">Welove</a></li>
                 </ul>
@@ -246,6 +269,19 @@
             </div>
         </header>
     </div>
+    <script>
+        const html = document.querySelector('html');
+        console.log(html);
+
+        window.addEventListener('scroll', scrollWork);
+
+        function scrollWork() {
+            if (html.scrollTop > 90) {
+                console.log('ok');
+            }
+
+        }
+    </script>
 
 </body>
 
