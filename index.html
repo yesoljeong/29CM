@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        header .top_event {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            font-size: 0.9rem;
+            padding: 0 40px;
+            height: 50px;
+        }
+
+        header .top_event span {
+            color: tomato;
+        }
+
+        header .top_event button {
+            background-color: tomato;
+            /* background-image: url('sp_29cm.png');
+            background-repeat: no-repeat;
+            background-position: 0 -90px;
+            background-size: 200px 200px; */
+            color: #fff;
+            border-radius: 20px;
+            width: 130px;
+            height: 30px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        header .top_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            padding: 0 40px;
+        }
+
+        header .top_section .logo {
+            background-image: url('sp_29cm.png');
+            background-repeat: no-repeat;
+            background-position: 0 -90px;
+            background-size: 200px 200px;
+            width: 120px;
+            height: 30px;
+        }
+
+        header .top_section .top_menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 380px;
+            font-size: 0.7rem;
+        }
+
+        header .top_section .top_menu a {
+            display:inline-block;
+            color: #000;
+        }
+
+        header .top_section .top_menu a span {
+            display: inline-block;
+            background-image: url('sp_29cm.png');
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+            width: 18px;
+            height: 18px;
+            margin-right: 3px;
+            vertical-align: middle;
+        }
+
+        header .top_section .top_menu a span.icon1 {
+            background-position: 0 -1px;
+        }
+
+        header .top_section .top_menu a span.icon2 {
+            background-position: -24px 0px;
+        }
+
+        header .top_section .top_menu a span.icon3 {
+            background-position: -50px 0px;
+        }
+
+        header .top_section .top_menu a span.icon4 {
+            background-position: -75px 0px;
+        }
+
+        header .special_section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 40px;
+        }
+
+        header .special_section .special_menu {
+            display: flex;
+            width:1100px;
+            justify-content: space-between;
+            font-size: 3rem;
+            align-items: center;
+            /* background-color:tomato; */
+        }
+
+        header .special_section .special_menu li a {
+            color: #000;
+            /* margin-right: 50px; */
+            font-weight: 700;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        header .special_section .special_menu .dot{
+            display:inline-block;
+            width:8px; 
+            height:8px;
+            background-color:tomato;
+            border-radius: 50%;
+            vertical-align: top;
+            position:absolute;
+            top:140px;
+        }
+
+        header .special_section .special_menu li a:hover {
+            border-bottom: 8px solid #000;
+        }
+
+        header .special_section input {
+            background-image: url('sp_29cm.png');
+            background-repeat: no-repeat;
+            background-size: 400px 400px;
+            background-position: -250px 0;
+            width: 45px;
+            height: 45px;
+            border:0;
+        }
+
+        header .gnb {
+            display: flex;
+            padding: 30px 40px;
+        }
+
+        header .gnb .gnb_menu {
+            display: flex;
+            border-right: 1px solid gray;
+        }
+
+        header .gnb .gnb_menu li {
+            margin-right: 30px;
+            font-weight: 900;
+        }
+
+        header .gnb .gnb_menu li a {
+            color: #000;
+            letter-spacing: 1px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        header .gnb .gnb_menu li a:hover {
+            border-bottom: 5px solid #000;
+        }
+
+        header .gnb .gnb_etc {
+            display: flex;
+            margin-left: 30px;
+        }
+
+        header .gnb .gnb_etc li {
+            margin-right: 30px;
+            font-style: italic;
+            letter-spacing: 1px
+        }
+
+        header .gnb .gnb_etc li a {
+            color: #5D5D5D;
+            font-weight: 500;
+        }
+
+        header .gnb .gnb_etc li a:hover {
+            border-bottom: 5px solid #000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="top_event">
+                <p>29TV 첫 쇼핑을 지원하는 앱 <span>15%</span> 할인 쿠폰</p>
+                <button>쿠폰받기</button>
+            </div>
+            <div class="top_section">
+                <h1>
+                    <div class="logo"></div>
+                </h1>
+                <ul class="top_menu">
+                    <li><a href="#"><span class="icon1"></span>MY PAGE</a></li>
+                    <li><a href="#"><span class="icon2"></span>MY HEART</a></li>
+                    <li><a href="#"><span class="icon3"></span>SHOPPING BAG</a></li>
+                    <li><a href="#"><span class="icon4"></span>LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="special_section">
+                <ul class="special_menu">
+                    <li><a href="#">Special-Order</a></li>
+                    <li><a href="#">Showcase</a></li>
+                    <li><a href="#">29TV
+                        <span class="dot"></span>
+                    </a></li>
+                    <li><a href="#">PT</a></li>
+                    <li><a href="#">Welove</a></li>
+                </ul>
+                <input type="search">
+            </div>
+            <div class="gnb">
+                <ul class="gnb_menu">
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">ACC</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">BEAUTY</a></li>
+                    <li><a href="#">TECH+</a></li>
+                    <li><a href="#">CULTURE</a></li>
+                </ul>
+                <ul class="gnb_etc">
+                    <li><a href="#">Best</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Brand</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+</body>
+
+</html>
