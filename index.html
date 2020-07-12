@@ -37,10 +37,6 @@
 
         .top_event button {
             background-color: tomato;
-            /* background-image: url('sp_29cm.png');
-            background-repeat: no-repeat;
-            background-position: 0 -90px;
-            background-size: 200px 200px; */
             color: #fff;
             border-radius: 20px;
             width: 130px;
@@ -49,17 +45,27 @@
             cursor: pointer;
         }
 
+        header {
+            position: relative;
+            height: 100px;
+            transition: all .3s linear;
+        }
+
+        header.fix {
+            position: fixed;
+            ;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+
         header .top_section {
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 80px;
             padding: 0 40px;
-        }
-
-        header .top_section.fix{
-            background:green;
-            
         }
 
         header .top_section .logo {
@@ -71,10 +77,13 @@
             height: 30px;
         }
 
-        header .top_section .logo.fix{
-            background-position: 0 -25px;
-            width: 55px;
-            height: 55px;
+        header .top_section .logo.fix {
+            background-image: url('images/og_image.png');
+            background-position: 0 0;
+            background-size: 56px 56px;
+            width: 56px;
+            height: 56px;
+            margin-top: 32px;
         }
 
         header .top_section .top_menu {
@@ -85,12 +94,20 @@
             font-size: 0.7rem;
         }
 
+        header .top_section .top_menu.fix {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 150px;
+            font-size: 0;
+        }
+
         header .top_section .top_menu a {
             display: inline-block;
             color: #000;
         }
 
-        header .top_section .top_menu a span {
+        header .top_section .top_menu span {
             display: inline-block;
             background-image: url('images/sp_29cm.png');
             background-repeat: no-repeat;
@@ -130,23 +147,31 @@
             justify-content: space-between;
             font-size: 3rem;
             align-items: center;
-            /* background-color:tomato; */
         }
 
         header .special_section .special_menu.fix {
             display: flex;
-            width: 1100px;
-            justify-content: space-between;
-            /* font-size: 2rem; */
-            align-items: center;
-            /* background-color:tomato; */
+            justify-content: flex-start;
+            font-size: 1.7rem;
+            background-color: #fff;
+            position: absolute;
+            top: 20px;
+            left: 100px;
+            margin-left: 20px;
+        }
+
+        header .special_section .special_menu.fix li {
+            margin-right: 20px;
         }
 
         header .special_section .special_menu li a {
             color: #000;
-            /* margin-right: 50px; */
             font-weight: 700;
             font-family: 'Ubuntu', sans-serif;
+        }
+
+        header .special_section .special_menu li .special_menu29 {
+            position: relative;
         }
 
         header .special_section .special_menu .dot {
@@ -157,7 +182,7 @@
             border-radius: 50%;
             vertical-align: top;
             position: absolute;
-            top: 140px;
+            top: 0;
         }
 
         header .special_section .special_menu li a:hover {
@@ -167,16 +192,35 @@
         header .special_section input {
             background-image: url('images/sp_29cm.png');
             background-repeat: no-repeat;
-            background-size: 400px 400px;
-            background-position: -250px 0;
-            width: 45px;
-            height: 45px;
+            background-size: 200px 200px;
+            background-position: -76px -25px;
+            width: 47px;
+            height: 47px;
             border: 0;
+        }
+
+        header .special_section.fix input {
+            background-image: url('images/sp_29cm.png');
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+            background-position: -125px 0;
+            width: 25px;
+            height: 25px;
+            border: 0;
+            position: absolute;
+            right: 50px;
         }
 
         header .gnb {
             display: flex;
             padding: 30px 40px;
+        }
+
+        header .gnb.fix {
+            position: absolute;
+            top: 40px;
+            margin-left: 80px;
+            font-size: 0.8rem;
         }
 
         header .gnb .gnb_menu {
@@ -223,35 +267,57 @@
 
 <body>
     <div class="wrap">
-        <div class="top_event">
+        <div class="top_event fixbefore">
             <p>29TV 첫 쇼핑을 지원하는 앱 <span>15%</span> 할인 쿠폰</p>
             <button>쿠폰받기</button>
         </div>
-        <header class="fix">
-            <div class="top_section fix">
+        <header class="fixbefore">
+            <div class="top_section fixbefore">
                 <h1>
-                    <div class="logo fix"></div>
+                    <div class="logo fixbefore"></div>
                 </h1>
-                <ul class="top_menu">
-                    <li><a href="#"><span class="icon1"></span>MY PAGE</a></li>
-                    <li><a href="#"><span class="icon2"></span>MY HEART</a></li>
-                    <li><a href="#"><span class="icon3"></span>SHOPPING BAG</a></li>
-                    <li><a href="#"><span class="icon4"></span>LOGIN</a></li>
+                <ul class="top_menu fixbefore">
+                    <li>
+                        <a href="#">
+                            <span class="icon1"></span>
+                            MY PAGE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon2"></span>
+                            MY PAGE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon3"></span>
+                            MY PAGE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon4"></span>
+                            MY PAGE
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="special_section">
-                <ul class="special_menu fix">
+            <div class="special_section fixbefore">
+                <ul class="special_menu fixbefore">
                     <li><a href="#">Special-Order</a></li>
                     <li><a href="#">Showcase</a></li>
-                    <li><a href="#">29TV
+                    <li>
+                        <a href="#" class="special_menu29">29TV
                             <span class="dot"></span>
-                        </a></li>
+                        </a>
+                    </li>
                     <li><a href="#">PT</a></li>
                     <li><a href="#">Welove</a></li>
                 </ul>
                 <input type="search">
             </div>
-            <div class="gnb">
+            <div class="gnb fixbefore">
                 <ul class="gnb_menu">
                     <li><a href="#">WOMEN</a></li>
                     <li><a href="#">ACC</a></li>
@@ -271,15 +337,23 @@
     </div>
     <script>
         const html = document.querySelector('html');
-        console.log(html);
+        const topEvent = document.querySelector('.top_event');
+        const fixBefores = document.querySelectorAll('.fixbefore');
 
         window.addEventListener('scroll', scrollWork);
 
         function scrollWork() {
-            if (html.scrollTop > 90) {
-                console.log('ok');
+            if (html.scrollTop > 50) {
+                topEvent.style.display = 'none';
+                for (let i = 0; i < fixBefores.length; i++) {
+                    fixBefores[i].classList.add('fix');
+                }
+            } else {
+                topEvent.style.display = '';
+                for (let i = 0; i < fixBefores.length; i++) {
+                    fixBefores[i].classList.remove('fix');
+                }
             }
-
         }
     </script>
 
