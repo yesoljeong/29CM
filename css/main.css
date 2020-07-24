@@ -1,0 +1,270 @@
+body {
+    height: 1500px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.top_event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0 40px;
+    height: 50px;
+}
+
+.top_event span {
+    color: tomato;
+}
+
+.top_event button {
+    background-color: tomato;
+    color: #fff;
+    border-radius: 20px;
+    width: 130px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+    background-color: tomato;
+}
+
+header.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #eaeaea;
+    height: 100px;
+    margin-bottom: 300px;
+}
+
+header .top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+}
+
+header .top_section .logo {
+    background-image: url('../images/sp_29cm.png');
+    background-repeat: no-repeat;
+    background-position: 0 -90px;
+    background-size: 200px 200px;
+    width: 120px;
+    height: 30px;
+}
+
+header .top_section .logo.fix {
+    background-image: url('../images/og_image.png');
+    background-position: 0 0;
+    background-size: 56px 56px;
+    width: 56px;
+    height: 56px;
+    margin-top: 32px;
+}
+
+header .top_section .top_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 380px;
+    font-size: 0.7rem;
+}
+
+header .top_section .top_menu.fix {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    font-size: 0;
+}
+
+header .top_section .top_menu a {
+    display: inline-block;
+    color: #000;
+}
+
+header .top_section .top_menu span {
+    display: inline-block;
+    background-image: url('../images/sp_29cm.png');
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+header .top_section .top_menu a span.icon1 {
+    background-position: 0 -1px;
+}
+
+header .top_section .top_menu a span.icon2 {
+    background-position: -24px 0px;
+}
+
+header .top_section .top_menu a span.icon3 {
+    background-position: -50px 0px;
+}
+
+header .top_section .top_menu a span.icon4 {
+    background-position: -75px 0px;
+}
+
+header .special_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+header .special_section .special_menu {
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    font-size: 3rem;
+    align-items: center;
+}
+
+header .special_section .special_menu.fix {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.7rem;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    margin-left: 20px;
+}
+
+header .special_section .special_menu.fix li {
+    margin-right: 20px;
+}
+
+header .special_section .special_menu li a {
+    color: #000;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header .special_section .special_menu li .special_menu29 {
+    position: relative;
+}
+
+header .special_section .special_menu .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: tomato;
+    border-radius: 50%;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+}
+
+header .special_section .special_menu li a:hover {
+    border-bottom: 8px solid #000;
+}
+
+header .special_section input {
+    background-image: url('../images/sp_29cm.png');
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: -76px -25px;
+    width: 47px;
+    height: 47px;
+    border: 0;
+}
+
+header .special_section.fix input {
+    background-image: url('../images/sp_29cm.png');
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: -125px 0;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    position: absolute;
+    right: 50px;
+}
+
+header .gnb {
+    display: flex;
+    padding: 30px 40px;
+}
+
+header .gnb.fix {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+header .gnb .gnb_menu {
+    display: flex;
+    border-right: 1px solid gray;
+}
+
+header .gnb .gnb_menu li {
+    margin-right: 30px;
+    font-weight: 900;
+}
+
+header .gnb .gnb_menu li a {
+    color: #000;
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header .gnb .gnb_menu li a:hover {
+    border-bottom: 5px solid #000;
+}
+
+header .gnb .gnb_etc {
+    display: flex;
+    margin-left: 30px;
+}
+
+header .gnb .gnb_etc li {
+    margin-right: 30px;
+    font-style: italic;
+    letter-spacing: 1px
+}
+
+header .gnb .gnb_etc li a {
+    color: #5D5D5D;
+    font-weight: 500;
+}
+
+header .gnb .gnb_etc li a:hover {
+    border-bottom: 5px solid #000;
+}
+
+/* LEFT SECTION  */
+#main.on {
+    margin-top: 300px;
+}
+
+#main .main_left {
+    width: 44%;
+    position: absolute;
+    top: 300px;
+}
+
+#main .main_left li img {
+    width: 100%;
+    vertical-align: top;
+}
