@@ -273,45 +273,53 @@ header .gnb .gnb_etc li a:hover {
     width:56%;
 }
 
-#main .main_right>li:nth-child(1) ul{
+#main .main_right .main_r_top ul{
     display:flex;
 }
 
-#main .main_right>li:nth-child(1) ul li{
+#main .main_right .main_r_top ul li{
     width:50%;
 }
 
-#main .main_right>li:nth-child(1) img{
+#main .main_right .main_r_top img{
     width:100%;
 }
 
 /* RIGHT SECTION BOTTOM */
-#main .main_right>li:nth-child(2){
-    width:50%;
+#main .main_right .main_r_bottom{
     border:1px solid lime;
-    padding:20px;
+    padding: 0 30px;
 }
 
-#main .main_right>li:nth-child(2){
-    width:50%;
-    border:1px solid lime;
-    padding:30px;
-    margin:50px 0;
+#main .main_right .main_r_bottom>ul{
+    /width:50%;
+    border: 1px solid blue;
+    margin-right:10%;
+
 }
 
-#main .main_right>li:nth-child(2) .right_title_img{
+#main .main_right .main_r_bottom>ul>li{
+    width:45%;
+    border: 1px solid red;
+    border-top:3px solid #000;
+    padding-top:30px;
+    margin-top:100px;
+    display:inline-block;
+}
+
+#main .main_right .main_r_bottom .right_title_img{
     width:100%;
     margin-bottom: 10px;
 }
 
-#main .main_right>li:nth-child(2) h5{
+#main .main_right .main_r_bottom h5{
     font-size:23px;
     font-weight: 600;
     font-family: 'Noto Sans KR', sans-serif;
     margin-bottom: 15px;
 }
 
-#main .main_right>li:nth-child(2) p{
+#main .main_right .main_r_bottom p{
     line-height: 1.5rem;
     font-size:15px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -319,41 +327,39 @@ header .gnb .gnb_etc li a:hover {
     margin-bottom: 15px;
 }
 
-#main .main_right>li:nth-child(2) div{
-    /* border:1px solid red; */
+#main .main_right .main_r_bottom div{
     display:flex;
     justify-content: space-between;
-    /* padding:10px 0; */
     border-top:1px solid #8C8C8C;
     margin-bottom: 20px;
 }
 
-#main .main_right>li:nth-child(2) div a{
+#main .main_right .main_r_bottom div a:nth-child(2){
     display:flex;
+    width:70%;
 }
 
-#main .main_right>li:nth-child(2) div img{
+#main .main_right .main_r_bottom div img{
     margin-top:10px;
     width:52px;
     height:52px;
 }
 
-#main .main_right>li:nth-child(2) div dl{
-    /* color:tomato; */
+#main .main_right .main_r_bottom div dl{
     font-family: 'Noto Sans KR', sans-serif;
     font-size:12px;
     line-height: 1.1rem;
-    border:1px solid lime;
     border-right:1px solid #8C8C8C;
-    padding:10px;
+    padding:10px 0;
     font-weight: 300;
+    width:100%;
 }
 
-#main .main_right>li:nth-child(2) div dl dt{
+#main .main_right .main_r_bottom div dl dt{
     font-weight: 500;
 }
 
-#main .main_right>li:nth-child(2) div dl dd:last-child{
+#main .main_right .main_r_bottom div dl dd:last-child{
     margin-top:8px;
     color:tomato;
 }
