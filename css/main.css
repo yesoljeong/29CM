@@ -288,14 +288,15 @@ header .gnb .gnb_etc li a:hover {
 /* RIGHT SECTION BOTTOM */
 #main .main_right .main_r_bottom{
     border:1px solid lime;
-    padding: 0 30px;
+    padding: 0 30px;  
+    position: relative;
 }
 
 #main .main_right .main_r_bottom>ul{
-    /width:50%;
+    width:100%;
     border: 1px solid blue;
     margin-right:10%;
-
+    position: absolute;
 }
 
 #main .main_right .main_r_bottom>ul>li{
@@ -304,7 +305,30 @@ header .gnb .gnb_etc li a:hover {
     border-top:3px solid #000;
     padding-top:30px;
     margin-top:100px;
-    display:inline-block;
+}
+
+#main .main_right .main_r_bottom>ul>li:nth-child(1){
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#main .main_right .main_r_bottom>ul>li:nth-child(2){
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#main .main_right .main_r_bottom>ul>li:nth-child(3){
+    position: absolute;
+    top:750px;
+    left:0;
+}
+
+#main .main_right .main_r_bottom>ul>li:nth-child(4){
+    position: absolute;
+    top:650px;
+    right:0;
 }
 
 #main .main_right .main_r_bottom .right_title_img{

@@ -197,6 +197,39 @@
                                 </div>
                             </div>
                         </li>
+                        <li>
+                            <a href="">
+                                <img src="images/right_1.jpg" class="right_title_img" alt="">
+                                <h5>물에 마구 젖어도 괜찮아!</h5>
+                                <p>비가 자주 오는 요즘, 마구 신어도 말리기 편한 러버 샌들을 모아보았습니다.</p>
+                            </a>
+                            <div>
+                                <a href="#"><img src="images/right_bottom_1.jpg" alt=""></a>
+                                <a href="#">
+                                    <dl>
+                                        <dt>코르카</dt>
+                                        <dd>413 JEANS_[윤승아착용] 413 JEANS</dd>
+                                        <dd>10% 123,456won</dd>
+                                    </dl>
+                                </a>
+                                <div class="heart_box">
+                                    <p>하트</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#"><img src="images/right_bottom_2.jpg" alt=""></a>
+                                <a href="#">
+                                    <dl>
+                                        <dt>코르카</dt>
+                                        <dd>413 JEANS_[윤승아착용] 413 JEANS</dd>
+                                        <dd>10% 123,456won</dd>
+                                    </dl>
+                                </a>
+                                <div class="heart_box">
+                                    <p>하트</p>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -207,13 +240,14 @@
         const topEvent = document.querySelector('.top_event');
         const fixBefores = document.querySelectorAll('.fixbefore');
         const liElems = document.querySelectorAll('.main_r_bottom>ul>li');
-        
-        for(let i=0; i<liElems.length; i++){
+
+        for (let i = 0; i < liElems.length; i++) {
             console.log(liElems[i].offsetHeight);
         }
 
 
 
+        // 헤더 fix 부분
         window.addEventListener('scroll', scrollWork);
 
         function scrollWork() {
@@ -229,8 +263,6 @@
                 }
             }
         }
-
-
     </script>
 
 </body>
