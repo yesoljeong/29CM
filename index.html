@@ -170,6 +170,13 @@
                                 <h5>물에 마구 젖어도 괜찮아!</h5>
                                 <p>비가 자주 오는 요즘, 마구 신어도 말리기 편한 러버 샌들을 모아보았습니다.</p>
                             </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/right_1.jpg" class="right_title_img" alt="">
+                                <h5>물에 마구 젖어도 괜찮아!</h5>
+                                <p>비가 자주 오는 요즘, 마구 신어도 말리기 편한 러버 샌들을 모아보았습니다.</p>
+                            </a>
                             <div>
                                 <a href="#"><img src="images/right_bottom_1.jpg" alt=""></a>
                                 <a href="#">
@@ -230,6 +237,26 @@
                                 </div>
                             </div>
                         </li>
+                        <li>
+                            <a href="">
+                                <img src="images/right_1.jpg" class="right_title_img" alt="">
+                                <h5>물에 마구 젖어도 괜찮아!</h5>
+                                <p>비가 자주 오는 요즘, 마구 신어도 말리기 편한 러버 샌들을 모아보았습니다.</p>
+                            </a>
+                            <div>
+                                <a href="#"><img src="images/right_bottom_1.jpg" alt=""></a>
+                                <a href="#">
+                                    <dl>
+                                        <dt>코르카</dt>
+                                        <dd>413 JEANS_[윤승아착용] 413 JEANS</dd>
+                                        <dd>10% 123,456won</dd>
+                                    </dl>
+                                </a>
+                                <div class="heart_box">
+                                    <p>하트</p>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -241,14 +268,10 @@
         const fixBefores = document.querySelectorAll('.fixbefore');
         const liElems = document.querySelectorAll('.main_r_bottom>ul>li');
 
-        for (let i = 0; i < liElems.length; i++) {
-            console.log(liElems[i].offsetHeight);
-        }
-
-
-
         // 헤더 fix 부분
         window.addEventListener('scroll', scrollWork);
+        window.addEventListener('resize', resizeWork)
+
 
         function scrollWork() {
             if (html.scrollTop > 50) {
@@ -263,6 +286,23 @@
                 }
             }
         }
+
+        // 오른쪽 하단 배너 위치값 지정하는 스크립트
+        function resizeWork() {
+            liElems[2].style.top = liElems[0].offsetHeight + 'px'
+            liElems[3].style.top = liElems[1].offsetHeight + 'px'
+            liElems[4].style.top = liElems[2].offsetHeight + liElems[0].offsetHeight + 'px'
+            liElems[5].style.top = liElems[3].offsetHeight + liElems[1].offsetHeight + 'px'
+
+            liElems[1].style.left = liElems[0].offsetWidth + 80 + 'px'
+
+            console.log()
+        }
+
+        // for (let i = 0; i < liElems.length; i++) {
+        //     console.log(liElems[i]);
+        // }
+        console.log(liElems[0 * 2])
     </script>
 
 </body>

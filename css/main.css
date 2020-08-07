@@ -1,5 +1,5 @@
-.wrap{
-    position:relative;
+.wrap {
+    position: relative;
 }
 
 .top_event {
@@ -29,8 +29,8 @@
 
 header {
     position: relative;
-    border:2px solid tomato;
-    background-color:#fff;
+    border: 2px solid tomato;
+    background-color: #fff;
 }
 
 header.fix {
@@ -249,11 +249,11 @@ header .gnb .gnb_etc li a:hover {
 
 /*  MAIN SECTION */
 #main {
-    position: absolute;   
+    position: absolute;
     /* border:5px solid lime; */
-    width:100%;
-    top:300px;
-    display:flex;
+    width: 100%;
+    top: 300px;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -270,123 +270,125 @@ header .gnb .gnb_etc li a:hover {
 /* RIGHT SECTION */
 /* RIGHT SECTION TOP */
 #main .main_right {
-    width:56%;
+    width: 56%;
 }
 
-#main .main_right .main_r_top ul{
-    display:flex;
+#main .main_right::after {
+    content:"";
+    display:inline-block;
+    height:100%;
+    width:1px;
+    background-color:blue;
 }
 
-#main .main_right .main_r_top ul li{
-    width:50%;
+#main .main_right .main_r_top ul {
+    display: flex;
 }
 
-#main .main_right .main_r_top img{
-    width:100%;
+#main .main_right .main_r_top ul li {
+    width: 50%;
+}
+
+#main .main_right .main_r_top img {
+    width: 100%;
 }
 
 /* RIGHT SECTION BOTTOM */
-#main .main_right .main_r_bottom{
-    border:1px solid lime;
-    padding: 0 30px;  
+#main .main_right .main_r_bottom {
+    border: 1px solid lime;
+    padding: 0 30px;
     position: relative;
 }
 
-#main .main_right .main_r_bottom>ul{
-    width:100%;
+#main .main_right .main_r_bottom>ul {
+    width: 100%;
     border: 1px solid blue;
-    margin-right:10%;
+    margin-right: 10%;
     position: absolute;
+    /* overflow: hidden; */
 }
 
-#main .main_right .main_r_bottom>ul>li{
-    width:45%;
+#main .main_right .main_r_bottom>ul>li {
+    width: 40%;
     border: 1px solid red;
-    border-top:3px solid #000;
-    padding-top:30px;
-    margin-top:100px;
-}
-
-#main .main_right .main_r_bottom>ul>li:nth-child(1){
+    /* margin-top: 100px; */
+    padding-top:100px;
     position: absolute;
-    top:0;
-    left:0;
+    transition: all .3s linear;
 }
 
-#main .main_right .main_r_bottom>ul>li:nth-child(2){
-    position: absolute;
-    top:0;
-    right:0;
+#main .main_right .main_r_bottom>ul>li::before{
+    content:"";
+    display:block;
+    width:70%;
+    height:3px;
+    background-color:#000;
+    margin-bottom:30px;
 }
 
-#main .main_right .main_r_bottom>ul>li:nth-child(3){
-    position: absolute;
-    top:750px;
-    left:0;
+#main .main_right .main_r_bottom>ul>li:nth-child(1n) {
+    top: 0;
+    /* left: 0; */
 }
 
-#main .main_right .main_r_bottom>ul>li:nth-child(4){
-    position: absolute;
-    top:650px;
-    right:0;
+#main .main_right .main_r_bottom>ul>li:nth-child(2n) {
+    top: 0;
+    right: 50px;
 }
 
-#main .main_right .main_r_bottom .right_title_img{
-    width:100%;
+#main .main_right .main_r_bottom .right_title_img {
+    width: 100%;
     margin-bottom: 10px;
 }
 
-#main .main_right .main_r_bottom h5{
-    font-size:23px;
+#main .main_right .main_r_bottom h5 {
+    font-size: 23px;
     font-weight: 600;
     font-family: 'Noto Sans KR', sans-serif;
     margin-bottom: 15px;
 }
 
-#main .main_right .main_r_bottom p{
+#main .main_right .main_r_bottom p {
     line-height: 1.5rem;
-    font-size:15px;
+    font-size: 15px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 100;
     margin-bottom: 15px;
 }
 
-#main .main_right .main_r_bottom div{
-    display:flex;
+#main .main_right .main_r_bottom div {
+    display: flex;
     justify-content: space-between;
-    border-top:1px solid #8C8C8C;
+    border-top: 1px solid #8C8C8C;
     margin-bottom: 20px;
 }
 
-#main .main_right .main_r_bottom div a:nth-child(2){
-    display:flex;
-    width:70%;
+#main .main_right .main_r_bottom div a:nth-child(2) {
+    display: flex;
+    width: 70%;
 }
 
-#main .main_right .main_r_bottom div img{
-    margin-top:10px;
-    width:52px;
-    height:52px;
+#main .main_right .main_r_bottom div img {
+    margin-top: 10px;
+    width: 52px;
+    height: 52px;
 }
 
-#main .main_right .main_r_bottom div dl{
+#main .main_right .main_r_bottom div dl {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size:12px;
+    font-size: 12px;
     line-height: 1.1rem;
-    border-right:1px solid #8C8C8C;
-    padding:10px 0;
+    border-right: 1px solid #8C8C8C;
+    padding: 10px 0;
     font-weight: 300;
-    width:100%;
+    width: 100%;
 }
 
-#main .main_right .main_r_bottom div dl dt{
+#main .main_right .main_r_bottom div dl dt {
     font-weight: 500;
 }
 
-#main .main_right .main_r_bottom div dl dd:last-child{
-    margin-top:8px;
-    color:tomato;
+#main .main_right .main_r_bottom div dl dd:last-child {
+    margin-top: 8px;
+    color: tomato;
 }
-
-
-
