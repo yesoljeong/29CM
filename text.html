@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .one {
+        position: relative;
+        border: 1px solid red;
+        padding: 10px;
+        /* height:200px; */
+    }
+
+    .one div:nth-child(1) {
+        border: 1px solid lime;
+        position: relative;
+        ;
+        top: 0;
+        height: 100px;
+    }
+
+    .one div:nth-child(2) {
+        border: 1px solid blue;
+        position: relative;
+        ;
+        bottom: 0;
+        height: 100px;
+    }
+
+    svg {
+        width: 100px;
+        height: 100px;
+        border: 1px solid lime;
+    }
+
+    path {
+        border: 1px solid red;
+        /* fill-rule: evenodd; */
+        stroke: black;
+        stroke: #ff4800 !important;
+        fill: #ff4800 !important;
+    }
+</style>
+
+<body>
+    <div class='one'>
+        <div>난 첫번째애야</div>
+        <div>난 두번째 애야</div>
+    </div>
+    <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" style="width: 16px;height: 100%;">
+        <path
+            d="M9 6.088C9 3.831 10.791 2 13 2s4 1.83 4 4.088c0 1.743-1.46 3.23-1.46 3.23L9 16 2.46 9.318S1 7.83 1 6.088C1 3.831 2.791 2 5 2s4 1.83 4 4.088z"
+            style="fill: none;fill-rule: evenodd;"></path>
+    </svg>
+
+</body>
+
+</html>
