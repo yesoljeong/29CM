@@ -1,7 +1,5 @@
 .wrap {
     position: relative;
-    border: 10px solid lime;
-    /* height:4000px; */
 }
 
 .top_event {
@@ -31,14 +29,12 @@
 
 header {
     position: relative;
-    border: 2px solid tomato;
     background-color: #fff;
-    /* margin-bottom: 100px; */
 }
 
 header.fix {
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 0;
     right: 0;
     border-bottom: 1px solid #eaeaea;
@@ -102,6 +98,7 @@ header .top_section .top_menu span {
     height: 18px;
     margin-right: 3px;
     vertical-align: middle;
+    border:1px solid red;
 }
 
 header .top_section .top_menu a span.icon1 {
@@ -109,7 +106,7 @@ header .top_section .top_menu a span.icon1 {
 }
 
 header .top_section .top_menu a span.icon2 {
-    background-position: -24px 0px;
+    background-position: -25px 0px;
 }
 
 header .top_section .top_menu a span.icon3 {
@@ -133,6 +130,7 @@ header .special_section .special_menu {
     justify-content: space-between;
     font-size: 3rem;
     align-items: center;
+    border:1px solid red;
 }
 
 header .special_section .special_menu.fix {
@@ -144,6 +142,8 @@ header .special_section .special_menu.fix {
     top: 27px;
     left: 100px;
     margin-left: 20px;
+    width: 700px;
+    border:1px solid red;
 }
 
 header .special_section .special_menu.fix li {
@@ -212,7 +212,7 @@ header .gnb.fix {
 
 header .gnb .gnb_menu {
     display: flex;
-    border-right: 1px solid gray;
+    border-right: 1px solid #d4d4d4;
 }
 
 header .gnb .gnb_menu li {
@@ -256,16 +256,14 @@ header .gnb .gnb_etc li a:hover {
     top: 0px;
     display: flex;
     justify-content: space-between;
-    border: 10px solid red;
+    border-bottom: 1px solid #D4D4D4;
     position: relative;
     padding-top: 50px;
-    /* padding-bottom: 200px; */
 }
 
 /* LEFT SECTION  */
 #main .main_left {
     width: 42%;
-    border: 1px solid blue;
 }
 
 #main .main_left li img {
@@ -277,8 +275,8 @@ header .gnb .gnb_etc li a:hover {
 /* RIGHT SECTION TOP */
 #main .main_right {
     width: 56%;
-    /* position: relative; */
-    border: 10px solid tomato;
+    border-left: 1px solid #D4D4D4;
+    position: relative;
 }
 
 #main .main_right::after {
@@ -286,7 +284,10 @@ header .gnb .gnb_etc li a:hover {
     display: inline-block;
     height: 100%;
     width: 1px;
-    background-color: blue;
+    background-color: #d4d4d4;
+    position: absolute;
+    left:50%;
+    top:0;
 }
 
 #main .main_right .main_r_top {
@@ -304,7 +305,7 @@ header .gnb .gnb_etc li a:hover {
     display: inline-block;
     height: 100%;
     width: 1px;
-    background-color: gray;
+    background-color: #D4D4D4;
 }
 
 #main .main_right .main_r_top ul li {
@@ -317,21 +318,18 @@ header .gnb .gnb_etc li a:hover {
 
 /* RIGHT SECTION BOTTOM */
 #main .main_right .main_r_bottom {
-    border: 1px solid lime;
     padding: 0 30px;
     position: relative;
 }
 
 #main .main_right .main_r_bottom>ul {
     width: 100%;
-    border: 1px solid yellow;
     margin-right: 10%;
     position: relative;
 }
 
 #main .main_right .main_r_bottom>ul>li {
     width: 42%;
-    border: 1px solid red;
     padding-top: 100px;
     position: absolute;
     transition: all .3s linear;
@@ -344,6 +342,7 @@ header .gnb .gnb_etc li a:hover {
     height: 3px;
     background-color: #000;
     margin-bottom: 30px;
+    margin-left:-10px;
 }
 
 #main .main_right .main_r_bottom>ul>li:nth-child(1n) {
@@ -376,16 +375,14 @@ header .gnb .gnb_etc li a:hover {
 }
 
 #main .main_right .main_r_bottom .item_box a:nth-child(1) {
-    border: 1px solid lime;
     width: 18%;
 }
 
 #main .main_right .main_r_bottom .item_box {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #8C8C8C;
+    border-top: 1px solid #d4d4d4;
     margin-bottom: 20px;
-    border: 1px solid blue;
 }
 
 #main .main_right .main_r_bottom div a:nth-child(2) {
@@ -403,7 +400,7 @@ header .gnb .gnb_etc li a:hover {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
     line-height: 1.1rem;
-    border-right: 1px solid #8C8C8C;
+    border-right: 1px solid #d4d4d4;
     padding: 10px 0;
     font-weight: 300;
     width: 100%;
@@ -415,12 +412,10 @@ header .gnb .gnb_etc li a:hover {
 
 #main .main_right .main_r_bottom div dl dd:last-child {
     margin-top: 8px;
-    /* color: tomato; */
 }
 
 /* HEART BOX */
 #main .main_right .main_r_bottom .heart_box {
-    border: 1px solid red;
     width: 20%;
     vertical-align: middle;
     margin: 0 auto;
@@ -431,18 +426,19 @@ header .gnb .gnb_etc li a:hover {
 }
 
 #main .main_right .main_r_bottom .heart_box svg {
-    border: 1px solid lime;
     width: 16px;
     margin-top: 20px;
 }
 
 #main .main_right .main_r_bottom .heart_box svg path {
-    border: 1px solid red;
     fill-rule: evenodd;
     stroke: black;
     fill: none;
-    /* stroke: #ff4800 !important;
-    fill: #ff4800 !important; */
+}
+
+#main .main_right .main_r_bottom .heart_box svg.fill path{
+    stroke: #ff4800 !important;
+    fill: #ff4800 !important;
 }
 
 #main .main_right .main_r_bottom .heart_box p {
@@ -455,7 +451,6 @@ header .gnb .gnb_etc li a:hover {
     position: relative;
     margin: 50px;
     text-align: center;
-    border: 10px solid lime;
 }
 
 button.more {
@@ -469,6 +464,7 @@ button.more a {
     height: 100%;
     padding: 15px 40px;
     display: block;
+    background-color:#fff;
 }
 
 /* FOOTER */
@@ -477,7 +473,6 @@ button.more a {
     margin: 0 auto;
     font-size: 13px;
     font-family: 'Nanum Gothic', sans-serif;
-    border: 5px solid blue;
     position: relative;
 }
 
@@ -603,7 +598,7 @@ button.more a {
 
 #footer .footer_info ul:nth-child(1) li:nth-child(1) {
     padding-right: 10px;
-    border-right: 1px solid gray;
+    border-right: 1px solid #d4d4d4;
     font-weight: 700;
 }
 

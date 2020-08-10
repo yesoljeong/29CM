@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/main_header_pad.css">
-    <link rel="stylesheet" media="screen and (min-width: 1090px)" href="css/main_pad.css">
+    <link rel="stylesheet" media="screen and (max-width: 1090px)" href="css/main_pad.css">
     <link rel="stylesheet" media="screen and (max-width: 540px)" href="css/main_mobile.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Ubuntu:wght@700&display=swap"
@@ -165,15 +164,7 @@
                                 <p>비가 자주 오는 요즘, 마구 신어도 말리기 편한 러버 샌들을 모아보았습니다.</p>
                             </a>
                             <div class="item_box">
-                                <div class="heart_box">
-                                    <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9 6.088C9 3.831 10.791 2 13 2s4 1.83 4 4.088c0 1.743-1.46 3.23-1.46 3.23L9 16 2.46 9.318S1 7.83 1 6.088C1 3.831 2.791 2 5 2s4 1.83 4 4.088z"
-                                            style="fill: none;fill-rule: evenodd;"></path>
-                                    </svg>
-                                    <p>하트</p>
-                                </div>
-
+                                <a href="#"><img src="images/right_bottom_1.jpg" alt=""></a>
                                 <a href="#">
                                     <dl>
                                         <dt>코르카</dt>
@@ -181,8 +172,14 @@
                                         <dd>10% 123,456won</dd>
                                     </dl>
                                 </a>
-
-                                <div><a href="#"><img src="images/right_bottom_1.jpg" alt=""></a></div>
+                                <div class="heart_box">
+                                    <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 6.088C9 3.831 10.791 2 13 2s4 1.83 4 4.088c0 1.743-1.46 3.23-1.46 3.23L9 16 2.46 9.318S1 7.83 1 6.088C1 3.831 2.791 2 5 2s4 1.83 4 4.088z">
+                                        </path>
+                                    </svg>
+                                    <p>하트</p>
+                                </div>
                             </div>
                         </li>
                         <li>
@@ -406,13 +403,17 @@
         const mainRightUl = document.querySelector('.main_r_bottom>ul');
         const liElems = document.querySelectorAll('.main_r_bottom>ul>li');
         const mainRight = document.querySelector('.main_right');
+        const heartBox = document.querySelectorAll('.heart_box');
 
-
-        // 헤더 fix 부분
         window.addEventListener('scroll', scrollWork);
         window.addEventListener('load', resizeWork);
         window.addEventListener('resize', resizeWork);
+        for (let i = 0; i < heartBox.length; i++) {
+            heartBox[i].addEventListener('click', heartClick);
+        }
 
+
+        // 헤더 fix 부분
         function scrollWork() {
             if (html.scrollTop > 50) {
                 topEvent.style.display = 'none';
@@ -448,10 +449,9 @@
             for (let i = 0; i < liElems.length; i++) {
                 liHeight += liElems[i].offsetHeight
             }
-            console.log(liHeight)
-            console.log(mainRightUl.style.height)
+
             mainRightUl.style.height = liHeight / 2 + 'px';
-            console.log(mainRightUl.offsetHeight)
+
         }
 
         function evenOdd(evenOrOdd) { // 파라미터(매개 변수)로 받음   
@@ -463,6 +463,15 @@
                 // height 증가 설정
                 height = evenOrOdd[i].offsetHeight + height
             }
+        }
+
+        // 하트박스 클릭 이벤트
+
+        function heartClick(e) {
+
+            if (e.target.tagName !== 'svg') return;
+
+            e.target.classList.add('fill')
         }
     </script>
 
