@@ -259,7 +259,7 @@ header .gnb .gnb_etc li a:hover {
     border: 10px solid red;
     position: relative;
     padding-top: 50px;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
 }
 
 /* LEFT SECTION  */
@@ -277,8 +277,8 @@ header .gnb .gnb_etc li a:hover {
 /* RIGHT SECTION TOP */
 #main .main_right {
     width: 56%;
-    position: relative;
-    ;
+    /* position: relative; */
+    border: 10px solid tomato;
 }
 
 #main .main_right::after {
@@ -287,6 +287,10 @@ header .gnb .gnb_etc li a:hover {
     height: 100%;
     width: 1px;
     background-color: blue;
+}
+
+#main .main_right .main_r_top {
+    position: relative;
 }
 
 #main .main_right .main_r_top ul {
@@ -322,8 +326,7 @@ header .gnb .gnb_etc li a:hover {
     width: 100%;
     border: 1px solid yellow;
     margin-right: 10%;
-    position: absolute;
-    top: 0;
+    position: relative;
 }
 
 #main .main_right .main_r_bottom>ul>li {
@@ -349,7 +352,7 @@ header .gnb .gnb_etc li a:hover {
 
 #main .main_right .main_r_bottom>ul>li:nth-child(2n) {
     top: 0;
-    right: 50px;
+    right: 0;
 }
 
 #main .main_right .main_r_bottom .right_title_img {
@@ -373,8 +376,8 @@ header .gnb .gnb_etc li a:hover {
 }
 
 #main .main_right .main_r_bottom .item_box a:nth-child(1) {
-    border:1px solid lime;
-    width:18%;
+    border: 1px solid lime;
+    width: 18%;
 }
 
 #main .main_right .main_r_bottom .item_box {
@@ -382,7 +385,7 @@ header .gnb .gnb_etc li a:hover {
     justify-content: space-between;
     border-top: 1px solid #8C8C8C;
     margin-bottom: 20px;
-    border:1px solid blue;
+    border: 1px solid blue;
 }
 
 #main .main_right .main_r_bottom div a:nth-child(2) {
@@ -417,12 +420,12 @@ header .gnb .gnb_etc li a:hover {
 
 /* HEART BOX */
 #main .main_right .main_r_bottom .heart_box {
-    border:1px solid red;
-    width:20%;
+    border: 1px solid red;
+    width: 20%;
     vertical-align: middle;
-    margin:0 auto;
+    margin: 0 auto;
     cursor: pointer;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -430,20 +433,20 @@ header .gnb .gnb_etc li a:hover {
 #main .main_right .main_r_bottom .heart_box svg {
     border: 1px solid lime;
     width: 16px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 #main .main_right .main_r_bottom .heart_box svg path {
     border: 1px solid red;
     fill-rule: evenodd;
     stroke: black;
-    fill:none;
+    fill: none;
     /* stroke: #ff4800 !important;
     fill: #ff4800 !important; */
 }
 
 #main .main_right .main_r_bottom .heart_box p {
-    font-size:10px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -610,16 +613,14 @@ button.more a {
 
 #footer .footer_info ul:nth-child(2) li,
 #footer .footer_info ul:nth-child(3) li {
-    /* border:1px solid red; */
     display: inline-block;
-    font-size: 10px;
+    font-size: 10.5px;
     margin-right: 5px;
 }
 
 #footer .footer_info button {
     font-size: 10px;
     background-color: #A4A4A4;
-    /* padding:0; */
     border: 0;
 }
 

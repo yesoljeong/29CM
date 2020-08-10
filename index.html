@@ -403,7 +403,10 @@
         const html = document.querySelector('html');
         const topEvent = document.querySelector('.top_event');
         const fixBefores = document.querySelectorAll('.fixbefore');
+        const mainRightUl = document.querySelector('.main_r_bottom>ul');
         const liElems = document.querySelectorAll('.main_r_bottom>ul>li');
+        const mainRight = document.querySelector('.main_right');
+
 
         // 헤더 fix 부분
         window.addEventListener('scroll', scrollWork);
@@ -439,6 +442,16 @@
 
             evenOdd(even);
             evenOdd(odd);
+
+            // main section 높이값 지정하는 스크립트
+            let liHeight = 0;
+            for (let i = 0; i < liElems.length; i++) {
+                liHeight += liElems[i].offsetHeight
+            }
+            console.log(liHeight)
+            console.log(mainRightUl.style.height)
+            mainRightUl.style.height = liHeight / 2 + 'px';
+            console.log(mainRightUl.offsetHeight)
         }
 
         function evenOdd(evenOrOdd) { // 파라미터(매개 변수)로 받음   
