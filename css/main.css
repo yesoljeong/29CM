@@ -412,6 +412,7 @@ header .gnb .gnb_etc li a:hover {
 
 #main .main_right .main_r_bottom div dl dd:last-child {
     margin-top: 8px;
+    color:tomato;
 }
 
 /* HEART BOX */
