@@ -98,7 +98,7 @@ header .top_section .top_menu span {
     height: 18px;
     margin-right: 3px;
     vertical-align: middle;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 header .top_section .top_menu a span.icon1 {
@@ -130,7 +130,7 @@ header .special_section .special_menu {
     justify-content: space-between;
     font-size: 3rem;
     align-items: center;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 header .special_section .special_menu.fix {
@@ -143,7 +143,7 @@ header .special_section .special_menu.fix {
     left: 100px;
     margin-left: 20px;
     width: 700px;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 header .special_section .special_menu.fix li {
